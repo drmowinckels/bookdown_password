@@ -1,0 +1,36 @@
+<script type="text/javascript" src="sha512.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+<script type="text/javascript" >
+  function onPass(event) {
+    event = event || window.event;
+    if (event.keyCode != 13) {
+      return;
+    }
+    var pass = $("#pass").val();
+    var here = window.location.href
+    var url = here.replace("index.html", "") + hex_sha512(pass) + "/index.html";
+    $("#status").text("...");
+    $.ajax({
+      type: 'HEAD',
+      url: url,
+      success: function() {
+        var iframe = $("#iframe");
+        iframe.css("display", "inherit");
+        iframe.attr("src", url);
+        $("#prompt").css("display", "none");
+      },
+      error: function() {
+            $("#status").text("Wrong password.");
+            // When testing the SHA key for you password, comment the above out, and remove comment below.
+            // $("#status").text(hex_sha512(pass));
+
+      }
+    });
+  }
+</script>
+
+<style>
+ #iframe { display: none; }
+</style>
+

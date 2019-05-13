@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1557756558944.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "943630170",
+    "id" : "9C68497E",
+    "lastKnownWriteTime" : 1557758096,
+    "last_content_update" : 1557758096861,
+    "path" : "~/R-stuff/bookdown_password_example/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+        "cursorPosition" : "11,0",
+        "scrollLine" : "9"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}
