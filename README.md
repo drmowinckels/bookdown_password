@@ -26,3 +26,5 @@ If github repo has github pages turned on for the  `docs` folder. You will land 
 Once the correct password it typed in the field, an html iframe will cover the entire view-screen with the rendered book. 
 
 You can copy this repo and build further on it to set up your password protected rendered book. 
+
+The result can be seen at [https://athanasiamo.github.io/bookdown_password/](https://athanasiamo.github.io/bookdown_password/)

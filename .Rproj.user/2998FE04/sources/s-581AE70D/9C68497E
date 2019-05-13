@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "943630170",
+    "hash" : "1266555049",
     "id" : "9C68497E",
-    "lastKnownWriteTime" : 1557758096,
-    "last_content_update" : 1557758096861,
+    "lastKnownWriteTime" : 1557758340,
+    "last_content_update" : 1557758340311,
     "path" : "~/R-stuff/bookdown_password_example/README.md",
     "project_path" : "README.md",
     "properties" : {
-        "cursorPosition" : "11,0",
-        "scrollLine" : "9"
+        "cursorPosition" : "29,126",
+        "scrollLine" : "12"
     },
     "read_only" : false,
     "read_only_alternatives" : [
