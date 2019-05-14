@@ -25,6 +25,14 @@ git push -q origin master
 If github repo has github pages turned on for the  `docs` folder. You will land on the index.html page, which is directly in the `docs` folder. 
 Once the correct password it typed in the field, an html iframe will cover the entire view-screen with the rendered book. 
 
+# Figuring out the password
+If you are having problems setting the correct password, comment out line 24 in `docs/pass.html`, and uncomment line 26. Re-knit `docs/index.Rmd`, and type in your desired password. Next to the password field, the corresponding SHA512 key should appear. Copy this string and paste it into your `_output.yml` as `output_dir: "docs/GENERATED_SHA_HASH_FROM_PASSWORD"`.
+
+For the password to work, the folder "docs/GENERATED_SHA_HASH_FROM_PASSWORD" needs to exist. 
+Run `bookdown::render_book("index.Rmd", "bookdown::gitbook")` in your R-console to render to book, which will create all necessary documents into the `output_dir` specified above.
+
+Typing the password on the landing page should now redirect you to your book. Once this procedure works, make sure to comment out line 26, and uncomment line 24 in `docs/pass.html`.
+
 You can copy this repo and build further on it to set up your password protected rendered book. 
 
 The result can be seen at [https://athanasiamo.github.io/bookdown_password/](https://athanasiamo.github.io/bookdown_password/)
